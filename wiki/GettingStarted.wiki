@@ -13,9 +13,7 @@ This page provides quick help to get you started using apt-cyg.
 {{{
   # for developers:
   # svn checkout https://apt-cyg.googlecode.com/svn/trunk/ apt-cyg --username <user>
-}}}
 
-{{{
   # for users:
   # svn checkout http://apt-cyg.googlecode.com/svn/trunk/ apt-cyg
 }}}
@@ -28,4 +26,10 @@ This page provides quick help to get you started using apt-cyg.
   # chmod +x ~/bin/apt-cyg
   # PATH=~/bin:$PATH
   # export PATH
+}}}
+
+  * use apt-cyg, for example:
+
+{{{
+  # apt-cyg install nano
 }}}
