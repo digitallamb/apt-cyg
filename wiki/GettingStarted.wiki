@@ -8,12 +8,23 @@ This page provides quick help to get you started using apt-cyg.
 = Step-by-step =
 
   * You will need to install Cygwin using conventional methods because apt-cyg is just a script and it requires quite a bit of standard Unix before it will run.
-  * This is a very lightweight project, meaning, among other things, _no releases_.  When you want to install apt-cyg, just check it out from the Subversion repository.
-  * If you checked it out read-only using Google's instructions, rename it to the canonical name, move it to a bin folder, and make it executable.  Here's one method:
+  * This is a very lightweight project, meaning, among other things, _no releases_.  When you want to install apt-cyg, just check it out from the Subversion repository:
+
+{{{
+  # for developers:
+  # svn checkout https://apt-cyg.googlecode.com/svn/trunk/ apt-cyg --username <user>
+}}}
+
+{{{
+  # for users:
+  # svn checkout http://apt-cyg.googlecode.com/svn/trunk/ apt-cyg
+}}}
+
+  * Rename it to the canonical name, move it to a bin folder, and make it executable.  Here's one method:
 
 {{{
   # mkdir -p ~/bin
-  # mv apt-cyg-read-only ~/bin/apt-cyg
+  # mv apt-cyg ~/bin/apt-cyg
   # chmod +x ~/bin/apt-cyg
   # PATH=~/bin:$PATH
   # export PATH
