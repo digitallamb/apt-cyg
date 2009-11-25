@@ -2,36 +2,22 @@
 
 = Introduction =
 
-This page provides quick help to get you started using apt-cyg.
+This page provides quick help to get you started improving apt-cyg.
 
-
-= Step-by-step =
-
-  * You will need to install Cygwin using conventional methods because apt-cyg is just a script and it requires quite a bit of standard Unix before it will run.
-  * This is a very lightweight project, meaning, among other things, _no releases_.  When you want to install apt-cyg, just check it out from the Subversion repository:
-
+* Get a working copy:
 {{{
-  # for developers:
-  # svn checkout https://apt-cyg.googlecode.com/svn/trunk/ apt-cyg --username <user>
-
-  # for users:
-  # svn checkout http://apt-cyg.googlecode.com/svn/trunk/ apt-cyg
+  # mkdir -p ~/src
+  # svn checkout http://apt-cyg.googlecode.com/svn/trunk/ ~/src
+  # chmod +x ~/src/apt-cyg
 }}}
 
-  * Move it to a bin folder, and make it executable.  Here's one method:
-
+* Test the working copy:
 {{{
-  # mkdir -p ~/bin
-  # mv apt-cyg/apt-cyg ~/bin/apt-cyg
-  # chmod +x ~/bin/apt-cyg
-  # PATH=~/bin:$PATH
-  # export PATH
+  # ~/src/apt-cyg install nano
 }}}
 
-  * use apt-cyg, for example:
+* Make apt-cyg better:
+???
 
-{{{
-  # apt-cyg install nano
-}}}
-
-  * If you followed these instructions exactly by putting apt-cyg in your personal bin folder, modify your .profile or .bash_profile so your personal bin folder will be added to the PATH variable on startup...
+* To create a patch and send it in, see the following:
+http://stephenjungels.com/jungels.net/articles/diff-patch-ten-minutes.html
