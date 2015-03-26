@@ -55,7 +55,7 @@ function usage()
 
 function version()
 {
-  echo "apt-cyg version 0.59"
+  echo "apt-cyg version 0.60"
   echo "Written by Stephen Jungels"
   echo ""
   echo "Copyright (c) 2005-9 Stephen Jungels.  Released under the GPL."
@@ -340,10 +340,10 @@ case "$command" in
     
     # check the md5
     digest=`cat "desc" | awk '/^install: / { print $4; exit }'` 
-    digactual=`md5sum $file | awk '{print $1}'`
+    digactual=`sha512sum $file | awk '{print $1}'`
     if ! test $digest = $digactual
     then
-      echo MD5 sum did not match, exiting
+      echo SHA512 sum did not match, exiting
       exit 1
     fi
     
